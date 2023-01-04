@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>Contact List</h2>
+
+<table style="width:60%">
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email Id</th>
+  </tr>
+  
+  {%for contacts in list %}
+  <tr>
+    <td>{{contacts.first_name}}</td>
+    <td>{{contacts.last_name}}</td>
+    <td>{{contacts.email}}</td>
+  </tr>
+ {% endfor%}
+</table>
+</body>
+</table>
